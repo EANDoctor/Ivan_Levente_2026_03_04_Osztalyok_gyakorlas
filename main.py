@@ -36,4 +36,19 @@ print(f"\nAz autók átlag életkora: {atlag_eletkor}")
 # Legidősebb autó:
 for auto in autok:
     if auto.gyartasi_ev == min(gyartasi_evek):
-        print(f"A legidősebb autó: {auto.marka} {auto.tipus}, életkor: {2026 - auto.gyartasi_ev}")
+        print(f"A legidősebb autó: {auto.marka} {auto.tipus}, életkor: {2026 - auto.gyartasi_ev}\n")
+
+auto4 = Auto("Ford", "Mustang", 2008, 12.5, 40)
+print(auto4)
+auto4.gyorsit(130)
+print(auto4)
+auto4.utazik(150)
+print(auto4)
+auto4.utazik(150)
+print(auto4)
+auto4.utazik(30)
+print(auto4)
+auto4.tankol(150)
+print(auto4)
+auto4.utazik(120)
+print(auto4)

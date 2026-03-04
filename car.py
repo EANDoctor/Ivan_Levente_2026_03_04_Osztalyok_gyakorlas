@@ -9,7 +9,7 @@ class Auto:
 
     def __str__(self):
         return f"{self.marka} {self.tipus} ({self.gyartasi_ev}),\
-        sebesség: {self.sebesseg} km/h, üzemanyag {self.uzemanyag} l"
+        sebesség: {self.sebesseg} km/h, üzemanyag {self.uzemanyag} liter"
 
     def gyorsit(self, ertek):
         self.sebesseg += ertek
