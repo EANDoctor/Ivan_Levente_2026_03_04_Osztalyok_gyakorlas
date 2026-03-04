@@ -32,3 +32,8 @@ for auto in autok:
 gyartasi_evek = [auto.gyartasi_ev for auto in autok]
 atlag_eletkor = (2026 * len(autok) - sum(gyartasi_evek)) / len(gyartasi_evek)
 print(f"\nAz autók átlag életkora: {atlag_eletkor}")
+
+# Legidősebb autó:
+for auto in autok:
+    if auto.gyartasi_ev == min(gyartasi_evek):
+        print(f"A legidősebb autó: {auto.marka} {auto.tipus}, életkor: {2026 - auto.gyartasi_ev}")
